@@ -1,16 +1,16 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/gutenbergsecondblock",
+	"name": "create-block/gutenbergrichtext",
 	"version": "0.1.0",
-	"title": "Gutenberg Second Block",
+	"title": "Gutenberg Rich Text",
 	"category": "common",
 	"icon": "admin-multisite",
-	"description": "This is only for the gutenberg second block.",
+	"description": "This is only for the gutenberg rich text block.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "gutenbergsecondblock",
+	"textdomain": "gutenbergrichtext",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

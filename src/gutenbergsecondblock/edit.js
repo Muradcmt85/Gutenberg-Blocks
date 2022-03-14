@@ -12,7 +12,7 @@ import { __ } from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
 import { useBlockProps } from '@wordpress/block-editor';
-import { TextControl } from '@wordpress/components';
+import {Placeholder, TextControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -30,15 +30,24 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit( { attributes, setAttributes } ) {
-	return (
-		<div { ...useBlockProps() }>
-		<TextControl
-			label={ __( 'Message', 'gutenbergsecondblock' ) }
-			value={ attributes.message }
-			onChange={ ( val ) => setAttributes( { message: val } ) }
-		/>
-	</div>
-	);
+ export default function Edit( { attributes, isSelected, setAttributes } ) {
+    return (
+        <div { ...useBlockProps() }>
+            { attributes.message && ! isSelected ? (
+                <div>{ attributes.message }</div>
+            ) : (
+                <Placeholder
+                    label="Gutenpride Block"
+                    instructions="Add your message"
+                >
+                    <TextControl
+                        value={ attributes.message }
+                        onChange={ ( val ) =>
+                            setAttributes( { message: val } )
+                        }
+                    />
+                </Placeholder>
+            ) }
+        </div>
+    );
 }
-

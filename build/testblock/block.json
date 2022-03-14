@@ -1,16 +1,16 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/gutenbergsecondblock",
+	"name": "create-block/testblock",
 	"version": "0.1.0",
-	"title": "Gutenberg Second Block",
+	"title": "Murad Block",
 	"category": "common",
-	"icon": "admin-multisite",
-	"description": "This is only for the gutenberg second block.",
+	"icon": "universal-access-alt",
+	"description": "This is only for the gutenberg Murad Block.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "gutenbergsecondblock",
+	"textdomain": "testblock",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"
