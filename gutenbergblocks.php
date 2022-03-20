@@ -28,5 +28,6 @@ function create_block_gutenbergblocks_block_init() {
 	register_block_type( __DIR__ . '/build/testblock' );
 	register_block_type( __DIR__ . '/build/testblock2' );
 	register_block_type( __DIR__ . '/build/gutenbergrichtext' );
+    register_block_type( __DIR__ . '/build/gutenbergtoolbar' );
 }
 add_action( 'init', 'create_block_gutenbergblocks_block_init' );

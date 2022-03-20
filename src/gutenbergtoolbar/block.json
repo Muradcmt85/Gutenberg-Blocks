@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/gutenbergtoolbar",
+	"version": "0.1.0",
+	"title": "Gutenberg Toolbar",
+	"category": "common",
+	"icon": "media-interactive",
+	"description": "This is only for the Gutenberg Toolbar block.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenbergtoolbar",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
