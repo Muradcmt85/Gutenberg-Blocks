@@ -34,6 +34,8 @@ function create_block_gutenbergblocks_block_init() {
 }
 add_action( 'init', 'create_block_gutenbergblocks_block_init' );
 
+
+// This function for create custom category
 function create_custom_categories($cat) {
 	return array_merge($cat, array(
 		array(
