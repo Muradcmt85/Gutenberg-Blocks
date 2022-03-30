@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+        "apiVersion": 2,
+        "name": "create-block/dynamicpost",
+        "title": "Dynamic Post Block",
+        "icon": "megaphone",
+        "category": "common",
+        "supports": {
+            "color": {
+                "text": true,
+                "background": true,
+                "link": true
+            }
+        },
+        "textdomain": "dynamicpost",
+        "editorScript": "file:./index.js",
+        "editorStyle": "file:./index.css",
+        "style": "file:./style-index.css"
+    }

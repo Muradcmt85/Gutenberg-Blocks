@@ -29,5 +29,18 @@ function create_block_gutenbergblocks_block_init() {
 	register_block_type( __DIR__ . '/build/testblock2' );
 	register_block_type( __DIR__ . '/build/gutenbergrichtext' );
     register_block_type( __DIR__ . '/build/gutenbergtoolbar' );
+    register_block_type( __DIR__ . '/build/blocksupports' );
+    register_block_type( __DIR__ . '/build/dynamicpost' );
 }
 add_action( 'init', 'create_block_gutenbergblocks_block_init' );
+
+function create_custom_categories($cat) {
+	return array_merge($cat, array(
+		array(
+			'slug' => 'custom_cat',
+			'title' => 'Custom Categories',
+		),
+	));
+}
+
+add_filter( 'block_categories', 'create_custom_categories' );
